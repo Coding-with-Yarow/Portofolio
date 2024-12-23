@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: black;
+}
+.header{
+    background-color: black;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 35px 60px;
+}
+
+.logo{
+  display: flex;
+  gap: 20px;
+
+}
+
+.logo h1{
+    font-size: 2.5em; 
+    color: white;
+
+}
+.in{
+    color: orangered;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: orangered;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+
+/* about */
+
+
+.head {
+ 
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.head h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.head p {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: white;
+}
+
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.about, .skills, .hobbies {
+  background-color: rgb(21,20,20);
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px orangered;
+}
+/* .hobbies h2 {
+    color: white;
+}
+.skills h2{
+    color: white;
+}
+.about h2{
+    color: white;
+} */
+
+.skills ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+footer {
+  background-color: rgb(21,20,20);
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: black;
+}
+
+/* Header Section */
+.header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 60px;
+}
+
+.logo {
+    display: flex;
+    gap: 20px;
+}
+
+.logo h1 {
+    font-size: 2.5em;
+    color: white;
+}
+
+.in {
+    color: orangered;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: orangered;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* About Section */
+.head {
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.head h1 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.head p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: white;
+}
+
+section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.about, .skills, .hobbies {
+    background-color: rgb(21, 20, 20);
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px orangered;
+}
+
+/* Skills section styling */
+.skills ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+/* Footer section */
+footer {
+    background-color: rgb(21, 20, 20);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Adjust header for smaller screens */
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    /* Adjust logo size on smaller screens */
+    .logo h1 {
+        font-size: 2rem;
+    }
+
+    /* Navigation menu changes */
+    nav ul {
+      display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    /* Adjust headings for smaller screens */
+    .head h1 {
+        font-size: 2.2rem;
+    }
+
+    .head p {
+        font-size: 1.1rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    /* Adjust padding and font sizes for sections */
+    section {
+        padding: 1.5rem;
+    }
+
+    .about, .skills, .hobbies {
+        padding: 1.2rem;
+    }
+
+    /* Footer styling */
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Header */
+    .header {
+        padding: 15px;
+    }
+
+    .logo h1 {
+        font-size: 1.8rem;
+    }
+
+    /* Navigation */
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    /* About Section */
+    .head h1 {
+        font-size: 2rem;
+    }
+
+    .head p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    section {
+        padding: 1.2rem;
+    }
+
+    .about, .skills, .hobbies {
+        padding: 1rem;
+    }
+
+    /* Footer */
+    footer p {
+        font-size: 0.7rem;
+    }
+}
+
+</style>
+<body>
+     <!-- header section -->
+     <div class="header">
+        <!-- logo section -->
+        <div class="logo">
+            <h1><span class="in">M</span>osab.</h1>
+        </div>
+        <!-- menu section -->
+         <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            
+            </ul>
+        </nav>
+    </div>
+
+    <!-- about -->
+
+    <header class="head">
+        <h1>More About Me</h1>
+        <p>Mosab/web-developer</p>
+      </header>
+    
+      <section class="about">
+        <h2>Who I Am</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id arcu tincidunt, feugiat risus eu, placerat orci. Quisque volutpat libero quis magna gravida, non hendrerit lorem efficitur.</p>
+      </section>
+    
+      <section class="skills">
+        <h2>Skills & Expertise</h2>
+        <ul>
+          <li>Skill 1: Description of skill or experience</li>
+          <li>Skill 2: Description of skill or experience</li>
+          <li>Skill 3: Description of skill or experience</li>
+        </ul>
+      </section>
+    
+      <section class="hobbies">
+        <h2>Hobbies & Interests</h2>
+        <p>Here you can talk about hobbies, interests, or any fun facts about yourself!</p>
+      </section>
+    
+      <footer>
+        <p>&copy; 2024 - Mosab</p>
+      </footer>
+</body>
+</html>

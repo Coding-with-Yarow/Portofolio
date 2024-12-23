@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact More</title>
+</head>
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: black;
+}
+.header{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 35px 60px;
+}
+
+.logo{
+  display: flex;
+  gap: 20px;
+
+}
+
+.logo h1{
+    font-size: 2.5em; 
+
+}
+.in{
+    color: orangered;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: orangered;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+
+/* contact more */
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 500px;
+    background-color: rgb(21,20,20);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px orangered;
+    text-align: center;
+}
+
+.contact-container h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: white;
+}
+
+.contact-container p {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.contact-form label {
+    display: block;
+    margin: 12px 0 5px;
+    color: #fff;
+    text-align: left;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(21,20,20);
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: orangered;
+}
+
+footer {
+  background-color: rgb(21,20,20);
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+/* responsive */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: black;
+}
+
+/* Header Section */
+.header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 35px 60px;
+}
+
+.logo {
+    display: flex;
+    gap: 20px;
+}
+
+.logo h1 {
+    font-size: 2.5em;
+    color: white;
+}
+
+.in {
+    color: orangered;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: orangered;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Contact Section */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 500px;
+    background-color: rgb(21, 20, 20);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px orangered;
+    text-align: center;
+}
+
+.contact-container h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: white;
+}
+
+.contact-container p {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.contact-form label {
+    display: block;
+    margin: 12px 0 5px;
+    color: #fff;
+    text-align: left;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(21, 20, 20);
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: orangered;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(21, 20, 20);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Header styling for tablets */
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .logo h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    /* Contact Form adjustments */
+    .contact-container {
+        max-width: 80%;
+        padding: 15px;
+    }
+
+    .contact-container h1 {
+        font-size: 22px;
+    }
+
+    .contact-form button {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Header styling for mobile */
+    .header {
+        padding: 15px;
+    }
+
+    .logo h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    /* Contact Form adjustments for mobile */
+    .contact-container {
+        max-width: 95%;
+        padding: 10px;
+    }
+
+    .contact-container h1 {
+        font-size: 20px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+</style>
+<body>
+      <!-- header section -->
+      <div class="header">
+        <!-- logo section -->
+        <div class="logo">
+            <h1><span class="in">M</span>osab.</h1>
+        </div>
+        <!-- menu section -->
+         <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            
+            </ul>
+        </nav>
+    </div>
+
+    <!-- contact more -->
+    <div class="contact">
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <p>If you have any questions, feel free to reach out to me using the form below.</p>
+        <form class="contact-form" action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer>
+        <p>&copy; 2024 - Mosab</p>
+    </footer>
+
+    
+</body>
+</html>
